@@ -1,174 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShiftGoal Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
 
-    <title>ShiftGoal Support</title>
+    body {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+    }
 
-    <style>
-        :root {
-            color-scheme: light dark;
-        }
+    h1 {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
 
-        body {
-            max-width: 760px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                         Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.7;
-        }
+    h2 {
+      margin-top: 40px;
+      font-size: 24px;
+    }
 
-        h1 {
-            font-size: 38px;
-            margin-bottom: 8px;
-        }
+    h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
 
-        h2 {
-            margin-top: 40px;
-            font-size: 24px;
-        }
+    .subtitle {
+      font-size: 18px;
+      opacity: 0.75;
+      margin-bottom: 35px;
+    }
 
-        .subtitle {
-            font-size: 18px;
-            opacity: 0.75;
-            margin-bottom: 35px;
-        }
+    .card {
+      padding: 22px;
+      margin: 20px 0;
+      border: 1px solid rgba(128, 128, 128, 0.3);
+      border-radius: 14px;
+    }
 
-        .card {
-            padding: 22px;
-            margin: 20px 0;
-            border: 1px solid rgba(128, 128, 128, 0.3);
-            border-radius: 14px;
-        }
+    a {
+      color: #0a84ff;
+    }
 
-        a {
-            color: #0a84ff;
-        }
-
-        footer {
-            margin-top: 55px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(128, 128, 128, 0.3);
-            opacity: 0.7;
-            font-size: 14px;
-        }
-    </style>
+    footer {
+      margin-top: 55px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(128, 128, 128, 0.3);
+      opacity: 0.7;
+      font-size: 14px;
+    }
+  </style>
 </head>
-
 <body>
 
-    <h1>ShiftGoal Support</h1>
+  <h1>ShiftGoal Support</h1>
 
-    <p class="subtitle">
-        Help and support for the ShiftGoal iOS application.
+  <p class="subtitle">
+    Help and support for the ShiftGoal iOS application.
+  </p>
+
+  <div class="card">
+    <h2>About ShiftGoal</h2>
+    <p>
+      ShiftGoal helps hourly-paid workers track shifts, calculate expected
+      earnings, compare payments, manage work-related expenses and monitor
+      income goals.
     </p>
+    <p>
+      ShiftGoal stores your information locally on your device and may
+      synchronize supported records through your private iCloud account when
+      iCloud sync is available. ShiftGoal does not require a separate account.
+    </p>
+  </div>
 
-    <div class="card">
-        <h2>About ShiftGoal</h2>
+  <h2>Frequently Asked Questions</h2>
 
-        <p>
-            ShiftGoal helps hourly-paid workers track shifts, calculate
-            expected earnings, compare payments, manage work-related
-            expenses and monitor income goals.
-        </p>
-    </div>
-
-    <h2>Frequently Asked Questions</h2>
-
+  <div class="card">
     <h3>Where is my information stored?</h3>
-
     <p>
-        ShiftGoal stores your workplaces, shifts, payments, goals and
-        expenses locally on your device using Apple's SwiftData framework.
-        ShiftGoal does not require an account.
+      ShiftGoal stores your workplaces, shifts, payments, goals, expenses and
+      related records locally on your device using Apple's SwiftData storage.
     </p>
+    <p>
+      When you are signed into iCloud and iCloud services are available,
+      ShiftGoal may also synchronize supported records using Apple's CloudKit
+      service and your private iCloud database. This can allow your information
+      to sync or restore between devices associated with the same iCloud account.
+    </p>
+    <p>ShiftGoal does not operate its own server for storing your records.</p>
+  </div>
 
+  <div class="card">
+    <h3>Does ShiftGoal sync with iCloud?</h3>
+    <p>
+      ShiftGoal can use your private iCloud database through Apple's CloudKit
+      service when iCloud is available on your device.
+    </p>
+    <p>
+      You can review iCloud-related status and options from
+      <strong>Settings → iCloud &amp; Data</strong> inside the app.
+    </p>
+    <p>
+      If iCloud is unavailable, ShiftGoal continues working with local storage,
+      although synchronization and cloud restoration may not be available.
+    </p>
+  </div>
+
+  <div class="card">
     <h3>How are earnings calculated?</h3>
-
     <p>
-        Earnings are estimated using the hours, hourly rate, breaks,
-        overtime, tips and bonuses entered by you. ShiftGoal is a personal
-        tracking tool and is not an official payroll system.
+      Earnings are estimated using the hours, hourly rate, breaks, overtime,
+      tips and bonuses entered by you. ShiftGoal is a personal tracking tool
+      and is not an official payroll system.
     </p>
+  </div>
 
+  <div class="card">
     <h3>Can I use ShiftGoal for multiple workplaces?</h3>
-
     <p>
-        Yes. You can create multiple workplaces with different hourly rates,
-        overtime rates and payment records.
+      Yes. You can create multiple workplaces with different hourly rates,
+      overtime rates and payment records.
     </p>
+  </div>
 
+  <div class="card">
     <h3>How do I protect my information?</h3>
-
     <p>
-        You can enable Face ID protection from the app's Settings screen.
-        Authentication is handled by Apple's operating system.
+      You can enable Face ID protection from the app's Settings screen.
+      Authentication is handled by Apple's operating system. ShiftGoal does not
+      receive or store your biometric information.
     </p>
+  </div>
 
+  <div class="card">
+    <h3>How do Home Screen widgets work?</h3>
+    <p>
+      ShiftGoal can display a summary on your Home Screen using a widget.
+      The app shares a limited snapshot with the widget through an Apple App
+      Group stored locally on your device.
+    </p>
+  </div>
+
+  <div class="card">
     <h3>How do I export my information?</h3>
-
     <p>
-        Open ShiftGoal and go to Settings, then Data &amp; Privacy. You can
-        export your records as CSV files and save or share them using the
-        iOS share sheet.
+      Open ShiftGoal and go to <strong>Settings → Data &amp; Privacy</strong>.
+      You can export your records as CSV files and save or share them using
+      the iOS share sheet. Exports are initiated by you.
     </p>
+  </div>
 
+  <div class="card">
     <h3>How do I delete my information?</h3>
-
     <p>
-        Individual records can be removed inside the app. Uninstalling
-        ShiftGoal will remove locally stored app data from the device,
-        subject to Apple's device backup and restore behaviour.
+      Individual records can be removed inside the app.
     </p>
-
-    <h2>Report a Problem</h2>
-
     <p>
-        When reporting an issue, please include:
+      Uninstalling ShiftGoal normally removes locally stored app data from
+      your device.
     </p>
+    <p>
+      If your information has previously synchronized with your private iCloud
+      account, deleting the app does not necessarily remove the copy stored in
+      iCloud. Synchronized information may become available again after
+      reinstalling ShiftGoal while using the same iCloud account.
+    </p>
+    <p>
+      You can manage iCloud data using controls provided by Apple through your
+      device and Apple account.
+    </p>
+  </div>
 
+  <h2>Report a Problem</h2>
+
+  <div class="card">
+    <p>When reporting an issue, please include:</p>
     <ul>
-        <li>Your iPhone model</li>
-        <li>Your iOS version</li>
-        <li>The steps that caused the problem</li>
-        <li>What you expected to happen</li>
-        <li>A screenshot or screen recording, where possible</li>
+      <li>Your iPhone model</li>
+      <li>Your iOS version</li>
+      <li>Whether iCloud sync is enabled</li>
+      <li>The steps that caused the problem</li>
+      <li>What you expected to happen</li>
+      <li>A screenshot or screen recording, where possible</li>
     </ul>
-
     <p>
-        Email:
-        <a href="mailto:mopidevi.venkatamahesh@gmail.com">
-            mopidevi.venkatamahesh@gmail.com
-        </a>
+      Email:
+      <a href="mailto:mopidevi.venkatamahesh@gmail.com">mopidevi.venkatamahesh@gmail.com</a>
     </p>
+  </div>
 
+  <h2>Privacy</h2>
+
+  <div class="card">
     <p>
-        You can also report technical issues through the
-        <a href="https://github.com/vmahesh-mopidevi/ShiftGoal/issues">
-            ShiftGoal GitHub Issues page
-        </a>.
+      Read the
+      <a href="privacy.html">ShiftGoal Privacy Policy</a>.
     </p>
+  </div>
 
-    <h2>Privacy</h2>
+  <h2>App Information</h2>
 
-    <p>
-        Read the
-        <a href="privacy.html">ShiftGoal Privacy Policy</a>.
-    </p>
-
-    <h2>App Information</h2>
-
+  <div class="card">
     <ul>
-        <li>App: ShiftGoal</li>
-        <li>Platform: iOS</li>
-        <li>Developer: Venkata Mahesh Mopidevi</li>
+      <li><strong>App:</strong> ShiftGoal</li>
+      <li><strong>Platform:</strong> iOS</li>
+      <li><strong>Developer:</strong> Venkata Mahesh Mopidevi</li>
     </ul>
+  </div>
 
-    <footer>
-        © 2026 Venkata Mahesh Mopidevi. All rights reserved.
-    </footer>
+  <footer>
+    <p><a href="index.html">Return to the ShiftGoal home page</a>.</p>
+    <p>&copy; 2026 Venkata Mahesh Mopidevi. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
