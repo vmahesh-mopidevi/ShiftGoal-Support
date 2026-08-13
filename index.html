@@ -1,48 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShiftGoal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShiftGoal</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
 
-    <style>
-        body {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 60px 20px;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                         Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-        }
+    body {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+    }
 
-        h1 {
-            font-size: 40px;
-        }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
 
-        .links {
-            margin-top: 35px;
-        }
+    .intro {
+      font-size: 18px;
+      opacity: 0.85;
+      margin-bottom: 10px;
+    }
 
-        a {
-            display: block;
-            margin: 15px 0;
-            font-size: 18px;
-            color: #007aff;
-        }
-    </style>
+    .note {
+      font-size: 16px;
+      opacity: 0.75;
+      margin-bottom: 35px;
+    }
+
+    .links {
+      margin-top: 35px;
+    }
+
+    .links a {
+      display: block;
+      margin: 15px 0;
+      font-size: 18px;
+      color: #0a84ff;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 55px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(128, 128, 128, 0.3);
+      opacity: 0.7;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #0a84ff;
+    }
+  </style>
 </head>
-
 <body>
-    <h1>ShiftGoal</h1>
 
+  <h1>ShiftGoal</h1>
+
+  <p class="intro">
+    ShiftGoal helps hourly-paid workers track shifts, expected earnings,
+    payments, expenses and income goals.
+  </p>
+
+  <p class="note">
+    Your information is stored locally on your device and may synchronize
+    through your private iCloud account when iCloud sync is available.
+    ShiftGoal does not require a separate account.
+  </p>
+
+  <div class="links">
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+
+  <footer>
     <p>
-        ShiftGoal helps hourly-paid workers track shifts, expected earnings,
-        payments, expenses and income goals.
+      Questions?
+      <a href="mailto:mopidevi.venkatamahesh@gmail.com">mopidevi.venkatamahesh@gmail.com</a>
     </p>
+    <p>&copy; 2026 Venkata Mahesh Mopidevi. All rights reserved.</p>
+  </footer>
 
-    <div class="links">
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy Policy</a>
-    </div>
 </body>
 </html>
